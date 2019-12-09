@@ -1,0 +1,41 @@
+<html>
+<script type="text/javascript">
+        function CallAndroid(msg){
+                msg=Android.Hi(msg);
+                 }
+
+        function go(msg){
+            Android.go(msg);
+            }
+
+        function write(msg){
+            document.getElementById("mDiv").innerHTML=msg;
+        }
+
+
+
+</script>
+
+
+<body>
+<input  type="button"
+        value="Hi Android"
+        onClick="CallAndroid('Hello Android')"/>
+
+<input  type="button"
+        value="Go"
+        onClick="go('Hello Android')"/>
+
+
+<input  type="button"
+        value="Write"
+        onClick="write('Hello')"/>
+
+
+
+<div id="mDiv"></div>
+
+
+</body>
+
+</html>
